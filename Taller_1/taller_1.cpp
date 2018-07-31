@@ -30,7 +30,7 @@ double taller(vector<double> limites, double particiones, double *error,double *
     //--------------------esto lo puso briam------------------------------------------
     if(xrAnterior!=0.00000)
     {
-        errorPorcentual = fabs((xr+xrAnterior/xr)*100.00000);
+        errorPorcentual = fabs((xr-xrAnterior/xr)*100.00000);
         cout<<"ERROR PORCENTUAL ---"<<setprecision(5)<<errorPorcentual<<endl; 
     }
     /*
@@ -84,7 +84,7 @@ int main()
     vector <double> limites;//GUARDA LOS PUNTOS DE CORTE DE LAS SECCIONES
     limites.push_back(10);//SE ESTABLECE EL PUNTO DE CORTE INFERIOR
     limites.push_back(20);//SE ESTABLECE EL PUNTO DE CORTE SUPERIOR
-    double cantParticiones= 3.00000;//SE ESTABLECE LA CANTIDAD DE PARTICIONES
+    double cantParticiones= 40.00000;//SE ESTABLECE LA CANTIDAD DE PARTICIONES
     double * recursiones=new double;//VARIABLE PARA LLEVAR EL CONTEO DE LAS RECURSIONES Y PODER CONTARLAS AL FINAL
     *recursiones=0;// INICIALIZACIÓN DEL CONTADOR DE RECURSIONES EN 0
     double * error=new double;//TENDRÁ EL VALOR DEL ERROR ABSOLUTO DEL PROCESO(EL VALOR DE f(x) MÁS CERCANO A 0 QUE SE LOGRÓ ENCONTRAR)
