@@ -15,7 +15,7 @@ double taller(vector<double> limites, double particiones, double *error,double *
     double seccion= (fabs((limites[0])-(limites[1]) )/particiones);//TAMAÑO DE CADA NUEVA PARTICION
     cout<<"seccion "<<seccion<<endl;
     double errorPorcentual ;//VARIABLE QUE TENDRÁ EL ERROR PORCENTUAL DE LA ITERACIÓN ACTUAL
-    double xr=(limites[0] + limites[1])/2.00000;
+    double xr=(limites[0] + limites[1])/2.000000;
     Particiones.push_back(limites[0]);//EL PRIMER LIMITE DEL CONTENEDOR DE PARTICIONES ES IGUAL AL LIMITE INFERIOR ESPECIFICADO PARA ESTA ITERACION
     for (int i=0; i<particiones; i++)//CALCULAR LOS NUEVOS PUNTOS DEL CONTENEDOR DE PARTICIONES
     {
